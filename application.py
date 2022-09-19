@@ -10,6 +10,7 @@ def do_something(text1,text2):
 def home():
     return render_template('home.html')
 @application.route('/join', methods=['GET','POST'])
+# this is my simple change
 def my_form_post():
     text1 = request.form['text1']
     word = request.args.get('text1')
